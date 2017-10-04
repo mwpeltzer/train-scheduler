@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- link to external css style sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <!-- linke to moment -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>Train Schedule 3000</h1>
+                <p class="lead">We Are Here To Keep You On Track</p>
+            </div>
+        </div>
+       
+        <!-- Current train schedule div  -->
+        <table class="table" id="mikesTable">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            	
+            	<tr>
+            		<td></td>
+            		<td></td>
+            		<td></td>
+            		<td></td>
+            		<td></td>
+            	</tr>
+            	
+
+            </tbody>
+
+        </table>
+        <!-- Add train div - form on submit - needs 4 separate input fields -->
+        <form>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Train Name</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" id="train-name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-search-input" class="col-2 col-form-label">Destination</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" id="destination">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-email-input" class="col-2 col-form-label">First Train Time (HHmm - military time</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" id="first-train">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-url-input" class="col-2 col-form-label">Frequency</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" id="frequency">
+                </div>
+            </div>
+            <button id="submit-button">Submit</button>
+        </form>
+   
+    <!-- close of container div -->
+    </div>
+    <!-- JavaScript -->
+    <script src="assets/logic.js"></script>
+</body>
+
+</html>
