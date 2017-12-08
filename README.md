@@ -57,10 +57,8 @@ var diffCalc = moment().diff(moment.unix(firstTrain), "minutes");
 
     console.log(frequencyFormat); 
 
-## Motivation:  To create a functional tool that can be applied to real life situations with regards to scheduling (this does not need to just be applied to trains)
+### Firebase Reference link: https://console.firebase.google.com/project/train-scheduler-52f6a/database/data
 
-## Firebase Reference link: https://console.firebase.google.com/project/train-scheduler-52f6a/database/data
-
-###Author: Michael Peltzer
+### Author: Michael Peltzer
 
 
