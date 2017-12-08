@@ -55,7 +55,7 @@ $("#submit-button").on("click", function() {
     var firstTrain = childSnapshot.val().first;
     var frequency = childSnapshot.val().freq;
 
-    
+    // so the time displays properly
     var firstTrainFormat = moment.unix(firstTrain).format("hh:mm a");
     var frequencyFormat = moment.unix(frequency).format("mm");
 

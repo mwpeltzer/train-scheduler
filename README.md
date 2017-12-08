@@ -1,8 +1,51 @@
-# train-scheduler
+# Train-Scheduler
 
-Synopsis: This web application will allow user to create a schedule for train arrivals - it allows the user to input a start time and also duration of time of for the train ride and will then use the current time to calculate a response with regards to when the next train arrives.  
+## Summary
 
-Code Example:  This code shows an the calculations that will generate the time schedule:
+A functional app that can be used to creat a schedule of train names, destination, frequency, next arrival and
+how soon until the next arrival
+
+## How To Use The App 
+
+- Upon page load, name your train
+
+- List the destinatin of your train
+
+- Specify the first train time
+
+- Input the freguency that your train runs
+
+## Requirements
+
+- When adding trains, administrators should be able to submit the following:
+
+- Train Name
+
+- Destination
+
+- First Train Time -- in military time
+
+- Frequency -- in minutes
+
+- Code this app to calculate when the next train will arrive; this should be relative to the current time.
+
+- Users from many different machines must be able to view same train times.
+
+
+## Technologies Used
+
+- Firebase
+
+- Javascript
+
+- CSS
+
+- Bootstrap
+
+- HTML
+
+
+## Code Example:  This code shows an the calculations that will generate the time schedule:
 
 var diffCalc = moment().diff(moment.unix(firstTrain), "minutes");
     
@@ -14,11 +57,10 @@ var diffCalc = moment().diff(moment.unix(firstTrain), "minutes");
 
     console.log(frequencyFormat); 
 
-Motivation:  To create a functional tool that can be applied to real life situations with regards to scheduling (this does not need to just be applied to trains)
+## Motivation:  To create a functional tool that can be applied to real life situations with regards to scheduling (this does not need to just be applied to trains)
 
-Firebase Reference link: https://console.firebase.google.com/project/train-scheduler-52f6a/database/data
+## Firebase Reference link: https://console.firebase.google.com/project/train-scheduler-52f6a/database/data
 
-License: Sorry Clay, meant to ask you about this for last weeks HW - not sure what this is 
-referencing
+###Author: Michael Peltzer
 
-Authors: Michael Peltzer
+
